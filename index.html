@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Snake Gamitiltle</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="blockPage">
+
+      <img class="snakeImg centerImageAndCanvas" id="imgSnake" src="snakouz.jpg" />
+      <img class="gameOverImg centerImageAndCanvas" id="imgGameOver" src="gameOver.png" />
+      <canvas class="canvas centerImageAndCanvas" id="gameCanvas"width="300"height="300"></canvas>
+      <p class="centerAlignCenter">Press start and eat the pizza!</p>
+      <div class="contentButton">
+        <button id="startButton">START</button>
+        <button id="endButton">PAUSE</button>
+        <button id="scoreButton" onclick="seeHighScore(true)">Score</button>
+        <button class="buttonReplay" id="restartButton">Rejouter</button>
+      </div>
+      <h1 class="title centerAlignCenter" id="point">Point </h1>
+
+      <div class="contentAbsolute hideHighScoreOpacity hideHighScoreDisplay" id="seeHighScore">
+        <div class="contentRelative">
+          <div id="contentHighScore">
+
+          </div>
+          <button class="buttonHighScoreClose" onclick="seeHighScore(false)">Quitter</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
